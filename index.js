@@ -1,5 +1,3 @@
-try {
-    window.close();
-} catch(e) {
-    console.log("a");
+function panic() {
+window.close();
 }
