@@ -1,5 +1,5 @@
 //waittime settings every 1000 = 1 second.
-waittime = 1000;
+waittime = 5000;
 //Buffer
 function panic() {
     window.close();
