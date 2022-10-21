@@ -5,9 +5,9 @@ function panic() {
     window.close();
 }
 function refresh() {
-    reload();
+    window.location.reload();
 }
 // TIMEOUT/DOCUMENT.reload for sanity
 setTimeout(() => {
-    reload();
+    window.location.reload();
   }, waittime)
