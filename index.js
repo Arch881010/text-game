@@ -2,7 +2,7 @@
 waittime = 5000;
 //Buffer
 function panic() {
-    window.close();
+    close();
 }
 function refresh() {
     window.location.reload();
