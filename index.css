@@ -7,11 +7,11 @@ body {
 .e {
     color: yellow;
 }
-.panic {
+#panic {
     background-color: red;
     color: white;
     text-align: center;
 }
-.refresh {
+#refresh {
     text-align: center;
 }
