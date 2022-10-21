@@ -1,3 +1,6 @@
 function panic() {
-window.close();
+    window.close();
+}
+function refresh() {
+    document.reload();
 }
