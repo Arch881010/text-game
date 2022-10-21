@@ -8,6 +8,8 @@ function refresh() {
     window.location.reload();
 }
 // TIMEOUT/DOCUMENT.reload for sanity
+/*
 setTimeout(() => {
     window.location.reload();
   }, waittime)
+  */
