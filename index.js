@@ -1,3 +1,5 @@
+//DIV
+const div = document.getElementById('div');
 //Creates locations
 const selection = document.createElement('select');
 blank.setAttribute('id', 'locationselecter')
@@ -65,6 +67,9 @@ text();
 newlocation();
 }
 // TIMEOUT/DOCUMENT.reload for sanity
+//USE FOR TESTING PURPOSES ONLY
+// /*
 setTimeout(() => {
     window.location.reload();
   }, waittime)
+// */
