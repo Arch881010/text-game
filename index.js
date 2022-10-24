@@ -1,5 +1,15 @@
+//Creates locations
+const dL = document.createElement("option");
+dL.setAttribute('value', 'DL');
+const dR = document.createElement("option");
+dR.setAttribute("value", 'DR');
+const upstairs1 = document.createElement("option");
+upstairs1.setAttribute("value", "Floor1u");
+const upstairs2 = document.createElement("option");
+upstairs1.setAttribute("value", "Floor2u");
 //Sets location, etc. 
 var numlocation = 0;
+const text1 = document.getElementById('text');
 function num() {
     if (Location === "01") {
         numlocation = 1;
@@ -8,6 +18,24 @@ function num() {
     } else {
         console.log("Location is not valid.");
         alert("Check Console");
+    }
+}
+function text() {
+    if (numlocation === 1) {
+        text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house."  
+    } else if(numlocation === 2) {
+        text.innerHTML = "2";
+    } else if(numlocation === 3) {
+        text.innerHTML = "3";
+    } else if (numlocation === 4) {
+        text.innerHTML = "4";
+    }
+}
+function newlocation() {
+    const selection = document.getElementById("locationselecter");
+    selection.replacechildren();
+    if(numlocation === 1){
+
     }
 }
 //waittime settings every 1000 = 1 second.
@@ -22,6 +50,8 @@ const submit = document.getElementById('submit');
 submit.onclick = function (){
 var Location = document.getElementById("locationselecter").value;
 num();
+text();
+newlocation();
 }
 // TIMEOUT/DOCUMENT.reload for sanity
 setTimeout(() => {
