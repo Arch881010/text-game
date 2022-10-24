@@ -3,8 +3,10 @@ const div = document.getElementById('div');
 //Creates locations
 const selection = document.createElement('select');
 selection.setAttribute('id', 'locationselecter')
+selection.setAttribute('class', 'c1');
 const blank = document.createElement("option");
 blank.setAttribute("value", 'blank');
+blank.setAttribute('text', 'text')
 const dL = document.createElement("option");
 dL.setAttribute('value', 'DL');
 const dR = document.createElement("option");
