@@ -2,7 +2,7 @@
 const div = document.getElementById('div');
 //Creates locations
 const selection = document.createElement('select');
-blank.setAttribute('id', 'locationselecter')
+selection.setAttribute('id', 'locationselecter')
 const blank = document.createElement("option");
 blank.setAttribute("value", 'blank');
 const dL = document.createElement("option");
