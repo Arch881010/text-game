@@ -47,6 +47,7 @@ function newlocation() {
     const div = document.getElementById("div");
     div.replaceChildren();
     div.appendChild(selection);
+    selection.appendChild(blank);
     if(numlocation === 1){
         
     }
