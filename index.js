@@ -5,11 +5,12 @@ waittime = 60000;
 function panic() {
     close();
 }
-// TIMEOUT/DOCUMENT.reload for sanity
+//ONCLICK
 const submit = document.getElementById('submit');
 submit.onclick = function (){
-var location = document.getElementById("locationselecter").value;
+var Location = document.getElementById("locationselecter").value;
 }
+// TIMEOUT/DOCUMENT.reload for sanity
 setTimeout(() => {
     window.location.reload();
   }, waittime)
