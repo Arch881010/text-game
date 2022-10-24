@@ -48,6 +48,9 @@ function newlocation() {
     div.replaceChildren();
     div.appendChild(selection);
     selection.appendChild(blank);
+    selection.appendChild(dL);
+    selection.appendChild(dR);
+    selection.appendChild(room1);
     if(numlocation === 1){
         
     }
