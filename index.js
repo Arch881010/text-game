@@ -45,7 +45,7 @@ function text() {
 }
 function newlocation() {
     const div = document.getElementById("div");
-    div.replacechildren();
+    div.replaceChildren();
     div.appendChild(selection);
     if(numlocation === 1){
         
