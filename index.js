@@ -1,4 +1,6 @@
 //Creates locations
+const blank = document.createElement("option");
+blank.setAttribute("value", 'blank');
 const dL = document.createElement("option");
 dL.setAttribute('value', 'DL');
 const dR = document.createElement("option");
@@ -7,6 +9,12 @@ const upstairs1 = document.createElement("option");
 upstairs1.setAttribute("value", "Floor1u");
 const upstairs2 = document.createElement("option");
 upstairs1.setAttribute("value", "Floor2u");
+const downstairs1 = document.createElement("option");
+downstairs1.setAttribute('value', 'Floor1d');
+const downstairs2 = document.createElement("option");
+downstairs2.setAttribute('value', 'Floor1d')
+const room1 = document.createElement('option');
+
 //Sets location, etc. 
 var numlocation = 0;
 const text1 = document.getElementById('text');
@@ -32,8 +40,8 @@ function text() {
     }
 }
 function newlocation() {
-    const selection = document.getElementById("locationselecter");
-    selection.replacechildren();
+    const div = document.getElementById("div");
+    div.replacechildren();
     if(numlocation === 1){
 
     }
