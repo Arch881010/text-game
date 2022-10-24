@@ -1,4 +1,6 @@
 //Creates locations
+const selection = document.createElement('select');
+blank.setAttribute('id', 'locationselecter')
 const blank = document.createElement("option");
 blank.setAttribute("value", 'blank');
 const dL = document.createElement("option");
@@ -42,8 +44,9 @@ function text() {
 function newlocation() {
     const div = document.getElementById("div");
     div.replacechildren();
+    div.appendChild(selection);
     if(numlocation === 1){
-
+        
     }
 }
 //waittime settings every 1000 = 1 second.
