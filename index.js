@@ -4,9 +4,6 @@ waittime = 50000;
 function panic() {
     close();
 }
-function refresh() {
-    window.location.reload();
-}
 // TIMEOUT/DOCUMENT.reload for sanity
 
 setTimeout(() => {
