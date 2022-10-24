@@ -25,7 +25,7 @@ const room1 = document.createElement('option');
 var numlocation = 0;
 const text1 = document.getElementById('text');
 function num() {
-    var Location = document.getElementById("locationselecter");
+    var Location = document.getElementById("locationselecter").value;
     if (Location === "01") {
         numlocation = 1;
     } else if (Location === "02") {
