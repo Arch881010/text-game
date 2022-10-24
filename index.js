@@ -25,9 +25,10 @@ const room1 = document.createElement('option');
 var numlocation = 0;
 const text1 = document.getElementById('text');
 function num() {
-    if (Location.value === "01") {
+    var Location = document.getElementById("locationselecter");
+    if (Location === "01") {
         numlocation = 1;
-    } else if (Location.value === "02") {
+    } else if (Location === "02") {
         numlocation = 2;
     } else {
         console.log("Location is not valid.");
