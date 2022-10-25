@@ -35,6 +35,7 @@ function num() {
     }
 }
 function text() {
+    const text = document.getElementById('text');
     if (numlocation === 1) {
         text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house."  
     } else if(numlocation === 2) {
