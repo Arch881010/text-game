@@ -25,7 +25,6 @@ const room1 = document.createElement('option');
 var numlocation = 0;
 const text1 = document.getElementById('text');
 function num() {
-    var Location = document.getElementById("locationselecter").value;
     if (Location === "01") {
         numlocation = 1;
     } else if (Location === "02") {
@@ -48,14 +47,13 @@ function text() {
 }
 function newlocation() {
     const div = document.getElementById("div");
-    div.replaceChildren();
-    div.appendChild(selection);
-    selection.appendChild(blank);
-    selection.appendChild(dL);
-    selection.appendChild(dR);
-    selection.appendChild(room1);
     if(numlocation === 1){
-        
+        div.replaceChildren();
+        div.appendChild(selection);
+        selection.appendChild(blank);
+        selection.appendChild(dL);
+        selection.appendChild(dR);
+        selection.appendChild(room1);
     }
 }
 //waittime settings every 1000 = 1 second.
