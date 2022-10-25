@@ -25,6 +25,7 @@ const room1 = document.createElement('option');
 var numlocation = 0;
 const text1 = document.getElementById('text');
 function num() {
+    var Location = document.getElementById("locationselecter").value;
     if (Location === "01") {
         numlocation = 1;
     } else if (Location === "02") {
@@ -35,11 +36,8 @@ function num() {
     }
 }
 function text() {
-    const text = document.getElementById('text');
-    const Location = document.getElementById("Location");
     if (numlocation === 1) {
-        text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house." ;
-        Location.innerHTML = "Front Room/Living Room";
+        text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house."  
     } else if(numlocation === 2) {
         text.innerHTML = "2";
     } else if(numlocation === 3) {
@@ -50,13 +48,14 @@ function text() {
 }
 function newlocation() {
     const div = document.getElementById("div");
+    div.replaceChildren();
+    div.appendChild(selection);
+    selection.appendChild(blank);
+    selection.appendChild(dL);
+    selection.appendChild(dR);
+    selection.appendChild(room1);
     if(numlocation === 1){
-        div.replaceChildren();
-        div.appendChild(selection);
-        selection.appendChild(blank);
-        selection.appendChild(dL);
-        selection.appendChild(dR);
-        selection.appendChild(room1);
+        
     }
 }
 //waittime settings every 1000 = 1 second.
@@ -68,17 +67,12 @@ function panic() {
 }
 //ONCLICK
 const submit = document.getElementById('submit');
-
-
 submit.onclick = function (){
-var c = confirm("You " + location)
 var Location = document.getElementById("locationselecter").value;
 num();
 text();
 newlocation();
 }
-
-
 // TIMEOUT/DOCUMENT.reload for sanity
 //USE FOR TESTING PURPOSES ONLY
 // /*
