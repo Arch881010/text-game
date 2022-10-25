@@ -36,8 +36,10 @@ function num() {
 }
 function text() {
     const text = document.getElementById('text');
+    const Location = document.getElementById("Location");
     if (numlocation === 1) {
-        text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house."  
+        text.innerHTML = "You enter the house, and notice there are two other doors, a stair case. But, you can always leave the house." ;
+        Location.innerHTML = "Front Room/Living Room";
     } else if(numlocation === 2) {
         text.innerHTML = "2";
     } else if(numlocation === 3) {
@@ -66,12 +68,17 @@ function panic() {
 }
 //ONCLICK
 const submit = document.getElementById('submit');
+
+
 submit.onclick = function (){
+var c = confirm("You " + location)
 var Location = document.getElementById("locationselecter").value;
 num();
 text();
 newlocation();
 }
+
+
 // TIMEOUT/DOCUMENT.reload for sanity
 //USE FOR TESTING PURPOSES ONLY
 // /*
